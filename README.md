@@ -14,6 +14,13 @@
 	}
 	
 	.info {
+		display:block;
+		border: 1px solid lightblue;
+		padding:25px;
+		margin-top:30px;
+	}
+	
+	.title {
 		display:none;
 		border: 1px solid lightblue;
 		padding:25px;
@@ -56,7 +63,7 @@ License](http://www.opensource.org/licenses/MIT).
 
 ## 目录
 
-<div class='en'>
+<div class='title'>
 ## Table of contents ##
 </div>
 
@@ -85,7 +92,7 @@ License](http://www.opensource.org/licenses/MIT).
   * [18. What is the current state of editor support for Go?](#faq18)
 
 ## 起因
-<div class='en'>
+<div class='title'>
 ## Motivation ##
 </div>
 

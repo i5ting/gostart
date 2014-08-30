@@ -32,26 +32,23 @@ var transtool_opts = {
         {
 						'all':{
               'icon':'icon-shop',
-							'display':"全部",
-              click:function(){
-                  alert('zh111');
-              }
+							'display':"全部"
 						},
             'zh':{
 							'icon':'icon-world',
-							'href':'http://baidu.com',
-							'target':'_blank',
-							'display':"中文",
-               click:function(){
-                   alert('zh111');
-               }
+							'display':"中文"
             },
             'en':{
                 'icon':'icon-cloud',
-								'display':"英文",
-                click:function(){
-                    alert('en');
-                }
+								'display':"英文"
+            },
+            'info':{
+                'icon':'icon-cloud',
+								'display':"文档信息"
+            },
+            'title':{
+                'icon':'icon-cloud',
+								'display':"标题"
             }
         }
     ]
