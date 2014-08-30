@@ -1,4 +1,33 @@
 This document assumes Go version 1.0.3.
+	
+## 说明
+
+- node_modules这样的目录是不允许提交到项目里来的，放到`.gitignore`文件中
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## 版本历史
+
+- v0.1.0 初始化版本
+
+## 欢迎fork和反馈
+
+- 翻译 by `i5ting` shiren1118@126.com
+
+如有建议或意见，请在issue提问或邮件
+
+## License
+
+this repo is released under the [MIT
+License](http://www.opensource.org/licenses/MIT).
+
+
 
 ## Table of contents ##
 
@@ -382,7 +411,7 @@ go get github.com/user/package
 
 All downloaded packages end up in `$GOPATH/src`. They are also automatically built and installed into `$GOPATH/pkg`. You can skip installation by passing `-d` flag to `go get`:
 
-```
+```bash
 go get -d github.com/user/package
 ```
 
