@@ -1,5 +1,30 @@
-This document assumes Go version 1.0.3.
+<style>
+	.zh {
+		display:block;
+		border: 1px solid lightblue;
+		padding:25px;
+		margin-top:30px;
+	}
 	
+	.en {
+		display:block;
+		border: 1px solid lightgreen;
+		padding:5px;
+		margin-top:30px;
+	}
+	
+	.info {
+		display:none;
+		border: 1px solid lightblue;
+		padding:25px;
+		margin-top:30px;
+	}
+	
+</style>
+
+This document assumes Go version 1.0.3.
+
+<div class='info'>	
 ## 说明
 
 - node_modules这样的目录是不允许提交到项目里来的，放到`.gitignore`文件中
@@ -26,10 +51,14 @@ This document assumes Go version 1.0.3.
 
 this repo is released under the [MIT
 License](http://www.opensource.org/licenses/MIT).
+</div>
 
 
+## 目录
 
+<div class='en'>
 ## Table of contents ##
+</div>
 
 * [Motivation](#motivation)
 * [The Go way](#canonical)
@@ -55,7 +84,10 @@ License](http://www.opensource.org/licenses/MIT).
   * [17. Where can I find more informantion about learning Go?](#faq17)
   * [18. What is the current state of editor support for Go?](#faq18)
 
+## 起因
+<div class='en'>
 ## Motivation ##
+</div>
 
 The **go tool** is bundled with Go distribution by default and it's convenient for automating common tasks such as getting dependencies, building, and testing your code. It's easy to use and provides a consistent command-line interface and it also expects you to respect a bunch of conventions, some of which I find peculiar and think they introduce a slight learning curve for some users and require a bit of getting used to.
 

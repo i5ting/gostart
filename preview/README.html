@@ -100,9 +100,66 @@
 .highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
 .highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
 .highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+<style>
+    .zh {
+        display:block;
+        border: 1px solid lightblue;
+        padding:25px;
+        margin-top:30px;
+    }
+    
+    .en {
+        display:block;
+        border: 1px solid lightgreen;
+        padding:5px;
+        margin-top:30px;
+    }
+    
+    .info {
+        display:none;
+        border: 1px solid lightblue;
+        padding:25px;
+        margin-top:30px;
+    }
+    
+</style>
+
 <p>This document assumes Go version 1.0.3.</p>
 
-<h2>Table of contents</h2>
+<div class='info'>  
+## 说明
+
+- node_modules这样的目录是不允许提交到项目里来的，放到`.gitignore`文件中
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## 版本历史
+
+- v0.1.0 初始化版本
+
+## 欢迎fork和反馈
+
+- 翻译 by `i5ting` shiren1118@126.com
+
+如有建议或意见，请在issue提问或邮件
+
+## License
+
+this repo is released under the [MIT
+License](http://www.opensource.org/licenses/MIT).
+</div>
+
+<h2>目录</h2>
+
+<div class='en'>
+## Table of contents ##
+</div>
 
 <ul>
 <li><a href="#motivation">Motivation</a></li>
@@ -133,7 +190,11 @@
 </ul></li>
 </ul>
 
-<h2>Motivation</h2>
+<h2>起因</h2>
+
+<div class='en'>
+## Motivation ##
+</div>
 
 <p>The <strong>go tool</strong> is bundled with Go distribution by default and it&#39;s convenient for automating common tasks such as getting dependencies, building, and testing your code. It&#39;s easy to use and provides a consistent command-line interface and it also expects you to respect a bunch of conventions, some of which I find peculiar and think they introduce a slight learning curve for some users and require a bit of getting used to.</p>
 
@@ -435,7 +496,7 @@ func cube<span class="o">(</span>x float32<span class="o">)</span> float32 <span
 go get github.com/user/package
 </pre></div>
 <p>All downloaded packages end up in <code>$GOPATH/src</code>. They are also automatically built and installed into <code>$GOPATH/pkg</code>. You can skip installation by passing <code>-d</code> flag to <code>go get</code>:</p>
-<div class="highlight"><pre><span class="vg">go</span><span class="w"> </span><span class="vg">get</span><span class="w"> </span><span class="o">-</span><span class="vg">d</span><span class="w"> </span><span class="vg">github</span><span class="o">.</span><span class="vg">com</span><span class="o">/</span><span class="vg">user</span><span class="o">/</span><span class="vg">package</span>
+<div class="highlight"><pre>go get -d github.com/user/package
 </pre></div>
 <h3>How do I distinguish between library packages and main packages?</h3>
 
