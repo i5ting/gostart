@@ -104,7 +104,10 @@ My experience was such that neither the recommended [initial reading][1], nor di
 
 In this article I'm going to explain the go way from an outsider's point of view. Assuming you're likely to encounter similar hurdles along your way, this guide should answer your questions and help you understand go tool's conventions. There is also a FAQ with code samples at the bottom.
 
+## Go的方式
+<div class='title'>
 ## The Go way ##
+</div>
 
 Here are some fundamentals you need to be aware of when using go tool.
 
@@ -171,7 +174,11 @@ The source for the downloaded package will end up in `$GOPATH/src/codehosting.co
 
 
 
-## Go tool doesn't do everything ##
+## Go tool 也不是万能的
+
+<div class='title'>
+##  Go tool doesn't do everything ##
+</div>
 
 Coming from other languages/environments, you may expect that `go` is a full on package management solution.  It isn't!  The following FAQ entries might be useful:
 
@@ -181,7 +188,11 @@ Coming from other languages/environments, you may expect that `go` is a full on 
   * [How do I freeze packages when deploying?](#faq16)
 
 
-## FAQ ##
+## 经常问到的问题 ##
+
+<div class='title'>
+##  FAQ ##
+</div>
 
 ### What is GOPATH and what should I do with it? ###
 
