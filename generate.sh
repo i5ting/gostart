@@ -1,1 +1,2 @@
-trans -f README.md
+cp -rf img preview/
+tocmd_conf -f README.md 
