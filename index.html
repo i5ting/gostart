@@ -1,0 +1,630 @@
+
+	    <html>
+	      <head>
+				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	        <title>README</title>
+					
+					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+			
+				  <style>
+					pre {
+					    counter-reset: line-numbering;
+					    border: solid 1px #d9d9d9;
+					    border-radius: 0;
+					    background: #fff;
+					    padding: 0;
+					    line-height: 23px;
+					    margin-bottom: 30px;
+					    white-space: pre;
+					    overflow-x: auto;
+					    word-break: inherit;
+					    word-wrap: inherit;
+					}
+
+					pre a::before {
+					  content: counter(line-numbering);
+					  counter-increment: line-numbering;
+					  padding-right: 1em; /* space after numbers */
+					  width: 25px;
+					  text-align: right;
+					  opacity: 0.7;
+					  display: inline-block;
+					  color: #aaa;
+					  background: #eee;
+					  margin-right: 16px;
+					  padding: 2px 10px;
+					  font-size: 13px;
+					  -webkit-touch-callout: none;
+					  -webkit-user-select: none;
+					  -khtml-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+
+					pre a:first-of-type::before {
+					  padding-top: 10px;
+					}
+
+					pre a:last-of-type::before {
+					  padding-bottom: 10px;
+					}
+
+					pre a:only-of-type::before {
+					  padding: 10px;
+					}
+			
+					.highlight { background-color: #ffffcc } /* RIGHT */
+					</style>
+	      </head>
+	      <body>
+				  <div>
+							<div style='width:25%;'>
+									<ul id="tree" class="ztree" style='width:100%'>
+		
+									</ul>
+							</div>
+			        <div id='readme' style='width:70%;margin-left:20%;'>
+			          	<article class='markdown-body'>
+			            	<style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f0f0f0; }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #40a070 } /* Literal.Number.Bin */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+<style>
+    .zh {
+        display:block;
+        border: 1px solid lightblue;
+        padding:25px;
+        margin-top:30px;
+    }
+    
+    .en {
+        display:block;
+        border: 1px solid lightgreen;
+        padding:5px;
+        margin-top:30px;
+    }
+    
+    .info {
+        display:block;
+        border: 1px solid lightblue;
+        padding:25px;
+        margin-top:30px;
+    }
+    
+    .title {
+        display:none;
+        border: 1px solid lightblue;
+        padding:25px;
+        margin-top:30px;
+    }
+    
+</style>
+
+<p>This document assumes Go version 1.0.3.</p>
+
+<div class='info'>  
+## 说明
+
+- node_modules这样的目录是不允许提交到项目里来的，放到`.gitignore`文件中
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## 版本历史
+
+- v0.1.0 初始化版本
+
+## 欢迎fork和反馈
+
+- 翻译 by `i5ting` shiren1118@126.com
+
+如有建议或意见，请在issue提问或邮件
+
+## License
+
+this repo is released under the [MIT
+License](http://www.opensource.org/licenses/MIT).
+</div>
+
+<h2>目录</h2>
+
+<div class='title'>
+## Table of contents ##
+</div>
+
+<ul>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#canonical">The Go way</a></li>
+<li><a href="#missing-features">Go tool doesn&#39;t do everything</a></li>
+<li><a href="#faq">FAQ</a>
+
+<ul>
+<li><a href="#faq0">0. What is GOPATH and what do I do with it?</a></li>
+<li><a href="#faq1">1. How do I start writing Go code?</a></li>
+<li><a href="#faq2">2. I&#39;ve written some code. How do I run it?</a></li>
+<li><a href="#faq3">3. How do I split my package into multiple files?</a></li>
+<li><a href="#faq4">4. How do I split my package into multiple subpackages?</a></li>
+<li><a href="#faq5">5. How do I create a package for others to use (i.e. a non-main package)?</a></li>
+<li><a href="#faq6">6. Where did output from running &#39;go build&#39; and &#39;go install&#39; go?</a></li>
+<li><a href="#faq7">7. How do I set up multiple workspaces?</a></li>
+<li><a href="#faq8">8. Can I create a package outside of $GOPATH?</a></li>
+<li><a href="#faq9">9. What if I want to hack on some (possibly throw-away) code outside of $GOPATH?</a></li>
+<li><a href="#faq10">10. How do I download remote packages?</a></li>
+<li><a href="#faq11">11. How do I distinguish between library pachages and main packages?</a></li>
+<li><a href="#faq12">12. Does it make sense to keep commands and packages in separate workspaces?</a></li>
+<li><a href="#faq13">13. Can I import commands in my code?</a></li>
+<li><a href="#faq14">14. What if I don&#39;t want to use code hosting domains in my import paths?</a></li>
+<li><a href="#faq15">15. How do I manage package versions?</a></li>
+<li><a href="#faq16">16. How do I freeze packages when deploying?</a></li>
+<li><a href="#faq17">17. Where can I find more informantion about learning Go?</a></li>
+<li><a href="#faq18">18. What is the current state of editor support for Go?</a></li>
+</ul></li>
+</ul>
+
+<h2>起因</h2>
+
+<div class='title'>
+## Motivation ##
+</div>
+
+<p>The <strong>go tool</strong> is bundled with Go distribution by default and it&#39;s convenient for automating common tasks such as getting dependencies, building, and testing your code. It&#39;s easy to use and provides a consistent command-line interface and it also expects you to respect a bunch of conventions, some of which I find peculiar and think they introduce a slight learning curve for some users and require a bit of getting used to.</p>
+
+<p>While the conventions imposed by go tool might seem natural for a hardcore gopher, it takes effort for a newcomer to get up to speed with it. If you hit a wall trying to make it work for you and ask for help on #go-nuts channel or <a href="http://groups.google.com/group/golang-nuts">golang-nuts group</a> showing your code layout and error messages <code>go get</code> or <code>go build</code> produces, you will most likely be told to first learn how to use go tool properly before you start coding in Go. Its documentation is actually pretty good, but it&#39;s not easy to absorb it all at once.</p>
+
+<p>My experience was such that neither the recommended <a href="http://golang.org/doc/code.html">initial reading</a>, nor discussions on the mailing list cleared up the picture completely for me. I was only able to eventually grasp the go way by gathering tidbits from the net, through experimentation, and by looking at the go tool&#39;s source code.</p>
+
+<p>In this article I&#39;m going to explain the go way from an outsider&#39;s point of view. Assuming you&#39;re likely to encounter similar hurdles along your way, this guide should answer your questions and help you understand go tool&#39;s conventions. There is also a FAQ with code samples at the bottom.</p>
+
+<h2>Go的方式</h2>
+
+<div class='title'>
+## The Go way ##
+</div>
+
+<p>Here are some fundamentals you need to be aware of when using go tool.</p>
+
+<h3>Go tool is only compatible with code that resides in a workspace</h3>
+
+<p>This is the fundamental rule of writing Go code. There are some exceptions that apply to little programs and throw-away code, but in general everything you write in Go will reside in your workspace. So what is a workspace?</p>
+
+<p>A workspace is a directory in your file system, the path to which is stored in the environment variable <code>GOPATH</code>. This directory has a certain structure, in the most basic terms it should have one subdirectory named <code>src</code>. Within the latter you create new subdirectories, one for each separate Go package.</p>
+
+<p>This is described in more detail in the aforementioned <a href="http://golang.org/doc/code.html">article</a> and in the FAQ near the end of the present document. To keep it simple, always create a new directory inside <code>$GOPATH/src</code> when you&#39;re starting a new Go project.</p>
+
+<h3>Go tool does not allow you to depend on specific versions of external packages</h3>
+
+<p>If you really need to have a specific version of a certain package, you&#39;ll need to fork that package and check it out at the specific version you desire. If you need to use different versions of a single package, you&#39;ll need to create a separate fork for each version.</p>
+
+<p>Obviously, this approach doesn&#39;t scale and gets tedious once you need more than one version of any given package. Go&#39;s reasoning behind this is that versioning is so damn hard that your dependencies should better all be working for you at their latest versions and also at the latest versions of their respective dependencies, and so on recursively. While this is a sound advice, it is generally not possible to adhere to it in practice. You <em>will</em> need to depend on specific versions of your immediate dependencies or dependencies of your dependencies, etc.</p>
+
+<p>In a nut, don&#39;t try to emulate versioning with go tool, it just doesn&#39;t play well with it.</p>
+
+<h3>When working with Go tool, use fully qualified imports and always build import paths from $GOPATH</h3>
+
+<p>There is no such thing as local packages in Go. While local imports are possible to some extent, they&#39;re meant more for the Go devs themselves than for Go users.</p>
+
+<p>Anything you import is relative to your <code>$GOPATH/src</code>. Thus, if you have a directory structure like the following one:</p>
+<div class="highlight"><pre>.
+└── src
+    └── gopher
+        ├── main.go
+        └── sub
+            └── sub.go
+</pre></div>
+<p>in your <em>main.go</em> file you&#39;ll need to import sub as follows:</p>
+<div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&quot;gopher/sub&quot;</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">sub</span><span class="p">.</span><span class="nx">ExportedFunction</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></div>
+<p>If you&#39;d like to use a go package that&#39;s publicly available from some code hosting site, the recommended approach is to import it like this:</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;codehosting.com/path/to/package&quot;</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kn">package</span><span class="p">.</span><span class="nx">ExportedFunction</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></div>
+<p>Go tool let&#39;s you download remote packages either by passing their import path to <code>go get</code> or calling <code>go get ./...</code> inside your project&#39;s directory to recursively get all remote dependencies.</p>
+<div class="highlight"><pre>go get codehosting.com/path/to/package
+</pre></div>
+<p>The source for the downloaded package will end up in <code>$GOPATH/src/codehosting.com/path/to/package</code>. Go tool will also automatically build a static lib and put it in <code>$GOPATH/pkg/...</code>. To read more about this, run <code>go help get</code> and <code>go help gopath</code>. Also, see <a href="#faq10">question 10</a>.</p>
+
+<h2>Go tool 也不是万能的</h2>
+
+<div class='title'>
+##  Go tool doesn't do everything ##
+</div>
+
+<p>Coming from other languages/environments, you may expect that <code>go</code> is a full on package management solution.  It isn&#39;t!  The following FAQ entries might be useful:</p>
+
+<ul>
+<li><a href="#faq7">How do I set up multiple workspaces?</a></li>
+<li><a href="#faq8">Can I create a package outside of $GOPATH?</a></li>
+<li><a href="#faq15">How do I manage package versions?</a></li>
+<li><a href="#faq16">How do I freeze packages when deploying?</a></li>
+</ul>
+
+<h2>经常问到的问题</h2>
+
+<div class='title'>
+##  FAQ ##
+</div>
+
+<h3>What is GOPATH and what should I do with it?</h3>
+
+<p>The best way to go about <code>GOPATH</code> for a beginner is to set it and forget it. If you&#39;re just starting with Go, do this:</p>
+
+<ol>
+<li>Install Go.</li>
+<li><p>Choose a directory where you&#39;ll be keeping all of your Go code and set <code>GOPATH</code> to it, e.g.</p>
+<div class="highlight"><pre><span class="c"># in your .bashrc or similar file</span>
+<span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span><span class="nv">$HOME</span>/go
+</pre></div></li>
+<li><p>Forget about it. Start every new project inside your <code>$GOPATH/src</code> and use the go tool for building, testing, fetching dependencies.</p></li>
+</ol>
+
+<p>If you&#39;d like to know more about <code>GOPATH</code>, it&#39;s frequently mentioned throughout this FAQ. Also, take a look at the following resources.</p>
+
+<ul>
+<li>official <a href="http://golang.org/doc/code.html">How to Write Go Code</a> guide</li>
+<li>the <code>build</code> package <a href="http://golang.org/pkg/go/build">documentation</a></li>
+<li><a href="http://code.google.com/p/go-wiki/wiki/GOPATH">GOPATH</a> (community wiki)</li>
+<li><a href="http://code.google.com/p/go-wiki/wiki/InstallTroubleshooting#Tips">Troublingshooting your Go installation</a> (community wiki)</li>
+</ul>
+
+<h3>How do I start writing Go code?</h3>
+
+<p>Before you start any coding, you should pick a directory that will become your Go workspace. All your Go code will reside there. Set the <code>GOPATH</code> environment variable to the path to that directory in your .bashrc or similar file for the  you&#39;re using.</p>
+<div class="highlight"><pre><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span>/Users/alco/go
+</pre></div>
+<p>You&#39;ll also need to create a subdirectory named <code>src</code> inside your <code>$GOPATH</code>, this is where you&#39;ll be keeping your Go packages and commands. Here&#39;s what your initial directory structure is going to look like:</p>
+<div class="highlight"><pre><span class="nv">$ </span>tree -L <span class="m">2</span> <span class="nv">$GOPATH</span>
+/Users/alco/go
+└── src
+    ├── example
+    ├── gopher
+    └── testy
+</pre></div>
+<p>Each of the subdirectories inside <code>src</code> represents a separate package or a command (see <a href="#faq11">question 11</a> describing the difference between packages and commands). Each one will contain at least one <em>.go</em> file and may also have subdirectories of its own.</p>
+
+<p>For more information about <code>GOPATH</code> and workspace directory structure, run <code>go help gopath</code>.</p>
+
+<h3>I&#39;ve written some code. How do I run it?</h3>
+
+<p>Navigate to your package&#39;s directory and use the go tool to build and run your code.</p>
+
+<p>Let&#39;s assume you created a program in <code>$GOPATH/src/example</code> directory:</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> <span class="nv">$GOPATH</span>/src/example
+<span class="nv">$ </span>ls
+main.go
+
+<span class="nv">$ </span>cat main.go
+package main
+
+import <span class="s2">&quot;fmt&quot;</span>
+
+func main<span class="o">()</span> <span class="o">{</span>
+    fmt.Println<span class="o">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+<p>The quickest way to run it is using <code>go run</code>:</p>
+<div class="highlight"><pre><span class="nv">$ </span>go run main.go
+Hello world!
+</pre></div>
+<p>If your main package is split into multiple files (see <a href="#faq3">question 3</a> for details on how to do that), you will need to pass them all as arguments to <code>go run</code>.</p>
+
+<p>Soon, however, you&#39;ll want to produce a binary from your Go source that you can run as a standalone executable, without using go tool. Use <code>go build</code> for that, it will create an executable in the current directory.</p>
+
+<p>You can also run <code>go install</code>, it will build the code and place the executable in <code>$GOPATH/bin</code>. You might want to add the latter to your <code>PATH</code> environment variable to be able to run your Go programs anywhere in the file system. If you set <code>GOBIN</code> environment variable, then results of running <code>go install</code> will be placed there.</p>
+<div class="highlight"><pre><span class="nv">$ </span>go build
+<span class="nv">$ </span>ls
+example main.go
+
+<span class="nv">$ </span>./example
+Hello world!
+
+<span class="nv">$ </span>go install
+<span class="nv">$ $GOPATH</span>/bin/example
+Hello world!
+</pre></div>
+<p>Here we defined a main package which has a <code>main</code> function that is the starting point of our Go program. Any Go program must have exactly one <code>main</code> function. By convention, these packages (the ones that declare <code>package main</code>) are called commands. In other words, we have built a command named <em>example</em>.</p>
+
+<p>You can also define packages with other names, those are called simply packages. They are not intended to produce executable programs, but rather be included as part of some command that will provide a main package with a single <code>main</code> function defined in it.</p>
+
+<p>See also: <code>go help run</code>, <code>go help build</code>, <code>go help install</code>.</p>
+
+<h3>How do I split my package into multiple files?</h3>
+
+<p>Go treats files in a single directory as belonging to one package as long as they all have the same name in their <code>package</code> declarations.</p>
+
+<p>Let&#39;s continue working on our example command. We&#39;ll add a second file named <em>helper.go</em> and define a helper function in it.</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> <span class="nv">$GOPATH</span>/src/example
+<span class="nv">$ </span>cat helper.go
+package main
+
+func privateHelperFunc<span class="o">()</span> int <span class="o">{</span>
+    <span class="k">return</span> 25
+<span class="o">}</span>
+
+<span class="c"># now edit main.go to call this function</span>
+<span class="nv">$ </span>tail -3 main.go
+func main<span class="o">()</span> <span class="o">{</span>
+    fmt.Println<span class="o">(</span><span class="s2">&quot;Hello world! My lucky number is&quot;</span>, privateHelperFunc<span class="o">())</span>
+<span class="o">}</span>
+</pre></div>
+<p>Now we cannot simply <code>go run main.go</code> because <em>main.go</em> calls a function defined in another file. We can either pass all files as arguments to go run or build the current package and then run the produced binary.</p>
+<div class="highlight"><pre><span class="nv">$ </span>go run main.go
+<span class="c"># command-line-arguments</span>
+./main.go:6: undefined: privateHelperFunc
+
+<span class="nv">$ </span>go run *.go
+Hello world! My lucky number is 25
+
+<span class="nv">$ </span>go build
+<span class="nv">$ </span>./example
+Hello world! My lucky number is 25
+</pre></div>
+<p>Private (non-exported) functions and data are accessible in all files that belong to a single package.</p>
+
+<p>A main package allows only one <code>main</code> function to be defined, so you&#39;ll need to choose one single file from your main package to put it in.</p>
+
+<p>Finally, you can also split any other package into multiple files, not just the main ones. Go&#39;s standard packages use this ability pervasively.</p>
+
+<h3>How do I split my package into multiple subpackages?</h3>
+
+<p>Subpackages are just separate packages that happen to reside in another package&#39;s directory. Go doesn&#39;t treat them in any special way, so import paths for subpackages are relative to your <code>$GOPATH/src</code>. Use a subpackage only when its functionality is tied to the main package which contains it and when it doesn&#39;t make sense to put that package on one level with other top-level packages.</p>
+
+<p>Let&#39;s create a subdirectory in our example project called <em>math</em> and create a file there named <em>math.go</em>.</p>
+<div class="highlight"><pre><span class="nv">$ </span>cat math/math.go
+package math
+
+func Mul2<span class="o">(</span>x int<span class="o">)</span> int <span class="o">{</span>
+    <span class="k">return</span> x * 2
+<span class="o">}</span>
+</pre></div>
+<p>Let&#39;s also edit <em>main.go</em> to call Mul2().</p>
+<div class="highlight"><pre><span class="nv">$ </span>cat main.go
+package main
+
+import <span class="o">(</span>
+    <span class="s2">&quot;fmt&quot;</span>
+    <span class="s2">&quot;example/math&quot;</span>  // just <span class="s2">&quot;math&quot;</span> would not work, it would import std package math
+<span class="o">)</span>
+
+func main<span class="o">()</span> <span class="o">{</span>
+    fmt.Println<span class="o">(</span><span class="s2">&quot;Hello world! My lucky number is&quot;</span>, math.Mul2<span class="o">(</span>privateHelperFunc<span class="o">()))</span>
+<span class="o">}</span>
+
+<span class="nv">$ </span>go run *.go
+Hello world! My lucky number is 50
+</pre></div>
+<p>Note that if you were to replace <code>package math</code> in <em>math.go</em> with <code>package main</code>, this would not make <em>math.go</em> part of the same main package that both <em>main.go</em> and <em>helper.go</em> belong to. It would be treated as another main package and you would get an error when trying to run or import it because it doesn&#39;t define a main function.</p>
+
+<h3>How do I create a package for others to use (i.e. a non-main package)?</h3>
+
+<p>In the previous questions we were mainly looking at writing so called commands — packages that declare <code>package main</code> and are meant to be built to produce an executable binary.</p>
+
+<p>The other flavor of Go packages is used as libraries or modules in other languages, you can&#39;t build them into an executable. Their purpose is to be imported into another package (not necessarily main package) to provide useful functionality to that package.</p>
+
+<p>You create a package the same way as you would create a command. The only difference is that instead of <code>package main</code> you write <code>package &lt;some other name&gt;</code>. All other rules described in previous questions apply to these packages as well: you may split one package into multiple files, but all files belonging to a package reside in a single directory.</p>
+
+<p>Let&#39;s say we have created a package called <em>util</em> that resides in <code>$GOPATH/src/util</code>.</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> <span class="nv">$GOPATH</span>/src/util
+<span class="nv">$ </span>cat main.go   <span class="c"># file name is arbitrary and doesn&#39;t make any significance to Go</span>
+package util
+
+import <span class="s2">&quot;math&quot;</span>
+
+func Square<span class="o">(</span>x float32<span class="o">)</span> float32 <span class="o">{</span>
+    <span class="k">return</span> x * x
+<span class="o">}</span>
+
+func Circle<span class="o">(</span>r float32<span class="o">)</span> float32 <span class="o">{</span>
+    <span class="k">return</span> math.Pi * r * r
+<span class="o">}</span>
+
+func cube<span class="o">(</span>x float32<span class="o">)</span> float32 <span class="o">{</span>
+    <span class="k">return</span> x * x * x
+<span class="o">}</span>
+
+<span class="nv">$ </span>go build
+<span class="c"># no output</span>
+</pre></div>
+<p>In the context of a simple (non-main) package, <code>go build</code> is used to verify that the package compiles without errors. It doesn&#39;t produce any binary. To precompile the package for use by other package, you can run <code>go install</code>. This will put <em>util.a</em> into <code>$GOPATH/pkg/&lt;arch&gt;/util.a</code>. Read more about the <em>pkg</em> directory by running <code>go help gopath</code>.</p>
+
+<p>In our util package, there are two exported functions (<code>Square</code> and <code>Circle</code>) and one private function (<code>cube</code>). The private function is only visible in files that are part of the package. Other packages can only call exported functions.</p>
+
+<p>See also this <a href="http://code.google.com/p/go-wiki/wiki/GithubCodeLayout">wiki page</a>, it describes the process of publishing and using remote packages.</p>
+
+<h3>Where did output from running &#39;go build&#39; and &#39;go install&#39; go?</h3>
+
+<p>Those two behave a bit differently depending on whether you&#39;re building a command (a main package) or a simple package.</p>
+
+<p>When building a main package, the resulting executable will be placed in the current directory. Running <code>go install</code>, on the other hand, will build the source as usual and place the executable in <code>$GOPATH/bin</code> (unless you have <code>GOBIN</code> environment variable set, in which case resulting binary will be placed there). This has also been discussed in the <a href="#faq2">second question</a>.</p>
+
+<p>Running <code>go build</code> inside the directory of a simple package does not produce any binary. Building a package this way is used to verify that it compiles cleanly. In order to create a binary from package source, run <code>go install</code> inside the package&#39;s directory. As discussed in the <a href="#faq5">previous question</a>, this will create an <em>.a</em> file inside <code>$GOPATH/pkg/&lt;arch&gt;</code> directory. Go tool will then be able to pick this binary when bulding other packages that import the current one.</p>
+
+<p>See also: <code>go help build</code>, <code>go help gopath</code>.</p>
+
+<h3>How do I set up multiple workspaces?</h3>
+
+<p>Short answer — you don&#39;t. Go tool does expect you to work in a single workspace. You can add more than one to your <code>GOPATH</code> environment variable, but there&#39;s a gotcha: <code>go get</code> will always download new packages into the first location listed in <code>GOPATH</code>.</p>
+
+<p>So while adding more than one path to <code>GOPATH</code> is rarely useful, you might still want to use multiple workspaces. You&#39;ll just need to change your <code>GOPATH</code> according to the workspace you&#39;re currently working in. There&#39;s definitely room here for some build tool that automates the bookkeeping.</p>
+
+<p>See also <a href="#faq14">question 14</a> for one example of using multiple workspaces.</p>
+
+<h3>Can I create a package outside of $GOPATH?</h3>
+
+<p>No. You can change your <code>GOPATH</code> though, as described in the previous answer. But keep in mind that <code>$GOPATH</code> points to a workspace. You packages go into the <em>src</em> directory inside a workspace.</p>
+
+<h3>What if I want to hack on some (possibly throw-away) code outside of $GOPATH?</h3>
+
+<p>If you&#39;re not going to import anything outside of standard library or have one level of local imports, then it&#39;ll work for you with go tool. If, however, you need to use fully qualified imports, you have to move your code to a workspace or else you&#39;ll get problems when trying to <code>go get</code> your dependencies and other bad things might also happen.</p>
+
+<p>Workarounds are possible for particular cases and those can be provided by another tool. In general, however, you have to stick to Go&#39;s conventions to make it work for you.</p>
+
+<h3>How do I download remote packages?</h3>
+
+<p>To get all dependencies for the current package:</p>
+<div class="highlight"><pre>go get ./...
+</pre></div>
+<p>To download a particular remote package:</p>
+<div class="highlight"><pre>go get &lt;package import path&gt;  <span class="c"># see &#39;go help packages&#39; for details</span>
+
+<span class="c"># for instance,</span>
+go get github.com/user/package
+</pre></div>
+<p>All downloaded packages end up in <code>$GOPATH/src</code>. They are also automatically built and installed into <code>$GOPATH/pkg</code>. You can skip installation by passing <code>-d</code> flag to <code>go get</code>:</p>
+<div class="highlight"><pre>go get -d github.com/user/package
+</pre></div>
+<h3>How do I distinguish between library packages and main packages?</h3>
+
+<p>Both kinds of packages live side by side in your workspace&#39;s <em>src</em> directory, so there&#39;s no distinction at the file system level. There is a convention to call the former ones simply packages and the latter ones commands. So, if your package&#39;s first line reads <code>package main</code>, it&#39;s a command. Otherwise, it&#39;s just called a package.</p>
+
+<h3>Does it make sense to keep commands and packages in separate workspaces?</h3>
+
+<p>I&#39;d recommend against that. Using multiple workspaces is tricky, you&#39;ll need to remember to adjust <code>GOPATH</code> every time you switch between them. See also <a href="#faq7">question 7</a> for more details.</p>
+
+<h3>Can I import commands in my code?</h3>
+
+<p>Sure, but you&#39;ll need to provide an alias during import so that the package&#39;s <code>main</code> function does not collide with your main function, if you&#39;re importing it into a main package.</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nx">chef</span> <span class="s">&quot;github.com/user/chef&quot;</span>
+</pre></div>
+<h3>What if I don&#39;t want to use code hosting domains in my import paths?</h3>
+
+<p>Don&#39;t let it bother you. This is a practice already widely adopted by the Go community. It also works well with <code>go get</code> automatically fetching or updating your dependencies. Stick to it, and you won&#39;t have troubles working with other people&#39;s packages and sharing packages of your own.</p>
+
+<p>If you&#39;re still curious, you can actually move stuff around inside <code>$GOPATH/src</code> after <code>go get</code> has downloaded your dependencies. This would go against the Go way though. Also, currently, the only fast way to distinguish other people&#39;s packages from your own is by looking at the directory structure inside your <code>$GOPATH/src</code>: remote packages will reside in one of the directories like <em>github.com</em> or <em>code.google.com</em>. So it&#39;s handy to leave that way.</p>
+
+<p>Keeping remote packages in another directory, separate from your own packages, would certainly be great. And it can be emulated by specifying more than one path in <code>GOPATH</code>. Running <code>go get</code> will always download packages into the first directory listed in <code>GOPATH</code>, so you can then create your own packages in the directory which is second on the list of paths in <code>GOPATH</code>.</p>
+
+<p>Using multiple workspaces has its issues though. See <a href="#faq7">question 7</a> for more details.</p>
+
+<h3>How do I manage package versions?</h3>
+
+<p>There is no widely adopted solution for package version management, currently.  The go tool has no knowledge of package versions; though it <a href="http://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies">does choose package versions (vcs tags)</a> based on your current go version.</p>
+
+<p>The currently accepted approach is to build all of your dependencies off of master.  Running <code>go get -u ./...</code> to update your locally cached dependencies is <em>helpful</em> to stay out of trouble, though not ideal.</p>
+
+<p>Before you get up in arms and race off to write your own package version manager, be sure to read through discussion of the previous attempts at this:</p>
+
+<ul>
+<li><a href="https://groups.google.com/d/topic/golang-nuts/cyt-xteBjr8/discussion">gonuts</a></li>
+<li><a href="https://groups.google.com/d/topic/golang-nuts/-65WPrNcT3U/discussion">gopkg</a></li>
+<li><a href="https://groups.google.com/d/topic/golang-nuts/-UG-lF_Ey-o/discussion">packaging as debs</a></li>
+<li><a href="https://groups.google.com/d/topic/golang-nuts/c1V9PjKhOz4/discussion">gopack</a></li>
+</ul>
+
+<h3>How do I freeze packages when deploying?</h3>
+
+<p>go tool does not provide any way to create a reproducible environment for fool-proof deployments.</p>
+
+<p>If you tested your code locally, you can never be sure that it&#39;ll work during your next deploy, because one of the dependencies might introduce a breaking change during the time period between your testing and deployment.</p>
+
+<p>The only apparent solution to this is to package up your downloaded dependencies and copy them over to your production environment.  Manually.  You might find <a href="https://github.com/kr/goven">goven</a> useful to automate this.</p>
+
+<h3>Where can I find more informantion about learning Go?</h3>
+
+<p>http://golang.org/doc/</p>
+
+<p>Take a look at this list of official <a href="http://code.google.com/p/go-wiki/wiki/GoTalks">Go talks</a>. Those are most helpful to start getting into the mindset of a Go programmer. Wish they were mentioned more prominently on the official Go site.</p>
+
+<h3>What is the current state of editor support for Go?</h3>
+
+<p>See this <a href="http://code.google.com/p/go-wiki/wiki/IDEsAndTextEditorPlugins">wiki page</a>.</p>
+
+			          	</article>
+			        </div>
+					</div>
+	      </body>
+	    </html>
+			<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+      <script type="text/javascript" src="toc/toc_conf.js"></script>
+      
+			<SCRIPT type="text/javascript" >
+			<!--
+			$(document).ready(function(){
+          var css_conf = eval(markdown_panel_style);
+          $('#readme').css(css_conf)
+          
+          var conf = eval(jquery_ztree_toc_opts);
+  				$('#tree').ztree_toc(conf);
+
+				
+			});
+			//-->
+			</SCRIPT>
+	  
